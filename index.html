@@ -1,79 +1,72 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	 <title>Tugas Web</title>
-   <script>
-            function validasi(){
-                var npm = document.getElementById('npm');
-                var nama = document.getElementById('nama');
-                var kelas = document.getElementById('kelas');
- 
-                if (harusDiisi(npm, "npm belum diisi")) {
-                    if (harusDiisi(nama, "nama belum diisi")) {
-                        if (harusDiisi(kelas, "kelas belum diisi")) {
-                            return true;
-                        };
-                    };
-                };
-                return false;
-            }
- 
-            function harusDiisi(att, msg){
-                if (att.value.length == 0) {
-                    alert(msg);
-                    att.focus();
-                    return false;
-                }
- 
-                return true;
-            }
-        </script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Riva Razmayanti Tugas</title>
 </head>
+
 <body>
-	<center><h2>TABLE</h2>
-<table class="table table-striped" border="1">
-  <thead>
+<center>
+<div>
+<h2>TABLE</h2>
+	<table border="1px">
+    	<tr>
+        	<th>NPM</th>
+            <th>Nama</th>
+            <th>Tanggal Lahir</th>
+        </tr>
+        <tr>
+        	<td>16115087</td>
+            <td>Riva Razmayanti</td>
+            <td>11 Desember</td>
+        </tr>
+        <tr>
+        	<td>14115944</td>
+            <td>Nadya Oktaviani</td>
+            <td>08 Oktober 1997</td>
+        </tr>
+        <tr>
+        	<td>16115164</td>
+            <td>Rizkia Safitri</td>
+            <td>06 Oktober 1997</td>
+        </tr>
+        <tr>
+        	<td>161115392</td>
+            <td>Sarah Dita Islamiah</td>
+            <td>30 Agustus 1997</td>
+        </tr>
+        <tr>
+        	<td>16115405</td>
+            <td>Saras Septiani</td>
+            <td>15 September 1997</td>
+        </tr>
+	</table>
+</div>
+<div style="margin-top:50px">
+<h2>Form</h2>
+	<form>
+    <table>
     <tr>
-      <th scope="col-2">#</th>
-      <th scope="col-2">NPM</th>
-      <th scope="col-2">Nama</th>
-      <th scope="col-2">Kelas</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-     <td>16115087</td>
-     <td>Riva Razmayanti</td>
-     <td>11 Desember 1996</td>
+    	<td>NPM</td>
+        <td>:</td>
+        <td><input type="text" name="NPM" placeholder="Masukkan NPM Anda" /><br /></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>14115944</td>
-      <td>Nadya Oktaviani</td>
-      <td>08 Oktober 1997</td>
+    	<td>Nama</td>
+        <td>:</td>
+        <td><input type="text" name="Nama" placeholder="Masukkan Nama Anda" /><br /></td>
     </tr>
     <tr>
-      <th scope="row">3</th>
-      <td>16115392</td>
-      <td>Sarah Dita Islamiah</td>
-      <td>30 Agustus 1997</td>
+    	<td>Tanggal Lahir</td>
+        <td>:</td>
+        <td><input type="text" name="Tgl Lahir" placeholder="Masukkan Tanggal Lahir Anda" /><br /></td>
     </tr>
-       <tr>
-      <th scope="row">4</th>
-      <td>17115039</td>
-      <td>Vinda Syakira</td>
-      <td>07 November 1997</td>
+    <tr>
+    	<td colspan="3"><center><input type="submit" value="Submit"/></center></td>
     </tr>
-  </tbody>
-</table>
-<center><h2>FORM</h2>
-  <div class="col-5">
-<form id="absensi" onsubmit="return validasi()" action="simpan.php" method="post">
-            <p>NPM:</p><input type="text" name="nim" id="npm"/><br/>
-            <p>Nama:</p><input type="text" name="nama" id="nama"/><br/>
-            <p>Kelas:</p><input type="text" name="kelas" id="kelas"/><br/>
-            <input type="submit" value="Simpan" maxlength="100"/>
-        </form>
+    	</table>
+    </form>
+</div>
+</center>
+</body>
 </html>
